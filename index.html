@@ -3,134 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odds Against Life | Alpha Experience</title>
+    <title>Odds Against Life | Beta</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="tv-effect"></div> <div class="risk-meter">      <div class="risk-fill" id="riskFill"></div>
+</div>
 
-    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
-
-    <header>
-        <div class="container nav-box">
-            <div class="logo-wrapper">
-                <img src="logo.png" alt="Logo" class="main-logo" onerror="this.style.display='none'">
-                <span class="logo-text">ODDS AGAINST LIFE</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">Mission</a></li>
-                    <li><a href="#guide">How to Use</a></li>
-                    <li><a href="#reader">Read</a></li>
-                    <li><a href="#team">Team</a></li>
-                </ul>
-            </nav>
+    <header class="reader-header">
+        <div class="logo-container">
+            <div class="logo">ODDS AGAINST LIFE</div>
+            <span class="tag">BETA</span>
+        </div>
+        
+        <div class="header-right">
+            <div id="panel-counter">Panel 1 / 8</div>
+            <div class="bar-container"><div id="progress-bar"></div></div>
         </div>
     </header>
 
-    <section id="about" class="hero">
-        <div class="hero-inner">
-            <h1>Odds Against Life</h1>
-            <p class="subtitle">An Interactive Journey Through Addiction</p>
-            <p class="hero-desc">
-                Educational manga experience designed to show the reality of gambling risks. 
-                Scroll down to witness the consequences of high-stakes choices.
-            </p>
-            <a href="#reader" class="btn">Launch Experience</a>
-        </div>
-    </section>
-
-    <section id="guide" class="guide-section">
-        <div class="container">
-            <h2 class="title">How to Use</h2>
-            <div class="steps-grid">
-                <div class="step-item">
-                    <span class="step-num">01</span>
-                    <h3>Scroll to Navigate</h3>
-                    <p>Move vertically to progress through the story. Optimized for mobile and desktop viewing.</p>
-                </div>
-                <div class="step-item">
-                    <span class="step-num">02</span>
-                    <h3>Track Progress</h3>
-                    <p>Monitor the top red bar and panel counter to follow the narrative structure.</p>
-                </div>
-                <div class="step-item">
-                    <span class="step-num">03</span>
-                    <h3>Final Message</h3>
-                    <p>Read to the end of the Alpha draft for the core social message regarding gambling awareness.</p>
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="glitch-text">ODDS AGAINST LIFE</h1>
+                <p class="goal">"The house always wins. It's time to break the cycle."</p>
+                <div class="hero-buttons">
+                    <button class="btn-main" onclick="document.querySelector('.comic-container').scrollIntoView()">START READING</button>
+                    <button class="btn-outline" onclick="document.querySelector('.authors').scrollIntoView()">THE CREATORS</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reader" class="reader-section">
-        <div class="container">
-            <div class="reader-header">
-                <span class="badge">ALPHA PROTOTYPE</span>
-                <div id="counter">Panel <span id="current-page">1</span> / 7</div>
-            </div>
+    <section class="guide">
+        <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>SCROLL</h3>
+            <p>Navigate through the dark reality of addiction.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">02</div>
+            <h3>TRACK</h3>
+            <p>Watch your progress on the top neon bar.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>REFLECT</h3>
+            <p>Every choice has a permanent consequence.</p>
+        </div>
+    </section>
 
-            <div class="manga-tape">
-                <img src="page1.jpg" alt="Panel 1">
-                <img src="page2.jpg" alt="Panel 2">
-                <img src="page3.jpg" alt="Panel 3">
-                <img src="page4.jpg" alt="Panel 4">
-                <img src="page5.jpg" alt="Panel 5">
-                <img src="page6.jpg" alt="Panel 6">
-                <img src="page7.jpg" alt="Panel 7">
-                <div class="end-trigger">To be continued in Beta...</div>
+    <main class="comic-container">
+        <div class="panel"><img src="cover.jpg" alt="Cover"></div>
+        <div class="panel"><img src="page1.jpg" alt="Panel 1"></div>
+        <div class="panel"><img src="page2.jpg" alt="Panel 2"></div>
+        <div class="panel"><img src="page3.jpg" alt="Panel 3"></div>
+        <div class="panel"><img src="page4.jpg" alt="Panel 4"></div>
+        <div class="panel"><img src="page5.jpg" alt="Panel 5"></div>
+        <div class="panel"><img src="page6.jpg" alt="Panel 6"></div>
+        <div class="panel"><img src="page7.jpg" alt="Panel 7"></div>
+    </main>
+
+    <section class="project-insight">
+        <div class="insight-container">
+            <div class="insight-box">
+                <h2 class="glitch-text-small">THE MESSAGE</h2>
+                <p>
+                    "Odds Against Life" is not just a story; it's a warning. Gambling addiction doesn't just drain your wallet—it consumes your mind. We created this interactive webtoon to demonstrate the psychological descent into the casino trap. The core message is simple: <strong>The house always wins. The only way to survive is to break the cycle.</strong>
+                </p>
+            </div>
+            <div class="insight-box">
+                <h2 class="glitch-text-small">ART DIRECTION</h2>
+                <p>
+                    Why this style? We deliberately chose a dark, gritty aesthetic with harsh neon red accents. This color palette simulates the deceptive, aggressive allure of a casino. The heavy black shadows represent the anxiety and isolation of addiction, stripping away the glamorous illusion to reveal the dangerous reality underneath.
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="team" class="team-section">
-        <div class="container">
-            <h2 class="title">The Creators</h2>
-            <div class="team-grid">
-                
-                <div class="member">
-                    <img src="timur.jpg" alt="Timur" class="avatar">
-                    <h3>Abdualiev Timur</h3>
-                    <span class="role">Creative Director & Illustrator</span>
-                    <ul class="member-tasks">
-                        <li>Narrative Storyboarding</li>
-                        <li>Character & Environment Design</li>
-                        <li>Social Impact Research</li>
-                    </ul>
-                </div>
-
-                <div class="member">
-                    <img src="nurali.jpg" alt="Nurali" class="avatar">
-                    <h3>Sapar Nurali</h3>
-                    <span class="role">Technical Lead & Developer</span>
-                    <ul class="member-tasks">
-                        <li>Web Architecture (HTML/CSS)</li>
-                        <li>Progress Tracking Logic (JS)</li>
-                        <li>GitHub Deployment & Optimization</li>
-                    </ul>
-                </div>
-
+    <section class="authors">
+        <h2 class="title">THE CREATIVE TEAM</h2>
+        <div class="authors-grid">
+            <div class="author-card">
+                <div class="photo-frame"><img src="nurali.jpg" alt="Sapar Nurali"></div>
+                <h3>Sapar Nurali</h3>
+                <span class="role">Tech Lead / Developer</span>
+                <p class="author-desc">System architecture, UI/UX, and interaction logic.</p>
+            </div>
+            <div class="author-card">
+                <div class="photo-frame"><img src="timur.jpg" alt="Timur Abdualiev"></div>
+                <h3>Abdualiev Timur</h3>
+                <span class="role">Art Director / Illustrator</span>
+                <p class="author-desc">Concept art, storyboards, and visual narrative.</p>
             </div>
         </div>
     </section>
-
-    <footer>
-        <p>© 2026 Odds Against Life | Project for Criterion C</p>
+<section class="action-plan reveal">
+    <div class="ap-container">
+        <h3 class="ap-title">// ACTION PLAN: BREAKING THE CYCLE</h3>
+        <div class="ap-grid">
+            <div class="ap-item">
+                <span class="ap-num">01.</span>
+                <p><strong>ACKNOWLEDGE:</strong> Recognize that gambling is a game of math, not luck. The house always wins in the long run.</p>
+            </div>
+            <div class="ap-item">
+                <span class="ap-num">02.</span>
+                <p><strong>DISCONNECT:</strong> Delete all betting apps and block gambling websites at the DNS level. Physical distance creates mental space.</p>
+            </div>
+            <div class="ap-item">
+                <span class="ap-num">03.</span>
+                <p><strong>REACH OUT:</strong> Gambling thrives in secrecy. Talk to someone you trust or call a professional helpline immediately.</p>
+            </div>
+        </div>
+        <p class="ap-footer">This project is part of a social awareness campaign. You are not alone.</p>
+    </div>
+</section>
+    <footer class="footer">
+        <p>&copy; 2026 ODDS AGAINST LIFE PROJECT</p>
     </footer>
 
-    <script>
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-
-            let total = 7;
-            let current = Math.ceil((scrolled / 100) * total);
-            if (current <= 0) current = 1;
-            if (current > total) current = total;
-            document.getElementById("current-page").innerText = current;
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
